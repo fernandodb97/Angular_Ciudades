@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { AcercaComponent } from './pages/acerca/acerca.component';
-import { BarraLateralComponent } from './components/barra-lateral/barra-lateral.component';
-import { RouterModule } from '@angular/router';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { BarraLateralComponent } from './components/barra-lateral/barra-lateral.component';
+
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
-  declarations: [InicioComponent, AcercaComponent, BarraLateralComponent, ContactoComponent],
+  declarations: [InicioComponent, AcercaComponent, ContactoComponent, BarraLateralComponent],
   imports:      [CommonModule, RouterModule],
-  exports:      [InicioComponent, AcercaComponent, ContactoComponent,BarraLateralComponent]
+  exports:      [InicioComponent, AcercaComponent, ContactoComponent, BarraLateralComponent]
 })
 export class SharedModule { }

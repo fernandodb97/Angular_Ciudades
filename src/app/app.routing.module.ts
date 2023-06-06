@@ -7,7 +7,8 @@ import { ContactoComponent } from "./shared/pages/contacto/contacto.component";
 const routes: Routes=[{path: 'inicio',   component:InicioComponent},
                       {path: 'acerca',   component:AcercaComponent},
                       {path: 'contacto', component:ContactoComponent},
-                      {path: '**'    ,   redirectTo:'inicio'        }]
+                      {path: 'ciudades', loadChildren:() =>import('./ciudades/ciudades.module').then(modulo => modulo.CiudadesModule)},
+                      {path: '**',       redirectTo:'inicio'}]
 
 @NgModule({
   imports:[RouterModule.forRoot(routes)],

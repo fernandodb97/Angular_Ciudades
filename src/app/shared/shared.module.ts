@@ -7,12 +7,13 @@ import { BarraLateralComponent } from './components/barra-lateral/barra-lateral.
 
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { CajaBusquedaComponent } from './components/caja-busqueda/caja-busqueda.component';
 
 
 
 @NgModule({
-  declarations: [InicioComponent, AcercaComponent, ContactoComponent, BarraLateralComponent],
+  declarations: [InicioComponent, AcercaComponent, ContactoComponent, BarraLateralComponent, CajaBusquedaComponent],
   imports:      [CommonModule, RouterModule],
-  exports:      [InicioComponent, AcercaComponent, ContactoComponent, BarraLateralComponent]
+  exports:      [InicioComponent, AcercaComponent, ContactoComponent, BarraLateralComponent, CajaBusquedaComponent]
 })
 export class SharedModule { }

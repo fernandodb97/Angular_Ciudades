@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
 })
 export class PorCapitalPageComponent {
 
+
+  buscarPorCapital(term:any):void{
+    console.log("Se ingreso:   ");
+    console.log({term});
+  }
 }

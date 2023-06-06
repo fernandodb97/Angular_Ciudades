@@ -8,7 +8,7 @@ const routes: Routes=[{path: 'inicio',   component:InicioComponent},
                       {path: 'acerca',   component:AcercaComponent},
                       {path: 'contacto', component:ContactoComponent},
                       {path: 'ciudades', loadChildren:() =>import('./ciudades/ciudades.module').then(modulo => modulo.CiudadesModule)},
-                      {path: '**',       redirectTo:'inicio'}]
+                      {path: '**',       redirectTo:'ciudades'}]
 
 @NgModule({
   imports:[RouterModule.forRoot(routes)],

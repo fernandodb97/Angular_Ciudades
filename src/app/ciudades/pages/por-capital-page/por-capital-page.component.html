@@ -6,13 +6,11 @@
         <!-- SearchBox --> 
         <app-caja-busqueda (valorBusqueda)="buscarPorCapital($event)"  placeholder="Buscar" ></app-caja-busqueda>
     </div>
-
 </div>
 
 <div class="row">
     <div class="col">
- 
-        <hr> tabla de resultados
+        <hr> 
+        <table *ngFor = "let ciudad of ciudades">{{ ciudad.capital }} - {{ ciudad.name.official }} - {{ ciudad.population }}</table>
     </div>
-
 </div>

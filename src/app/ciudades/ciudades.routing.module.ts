@@ -6,8 +6,8 @@ import { PorPaisPageComponent } from "./pages/por-pais-page/por-pais-page.compon
 import { CiudadPageComponent } from './pages/ciudad-page/ciudad-page.component';
 
 const routes: Routes=[{path: 'by/:id', component:CiudadPageComponent},
-                      {path: 'porCapital',   component:PorCapitalPageComponent},
-                      {path: 'porRegion',   component:PorRegionPageComponent},
+                      {path: 'porCapital', component:PorCapitalPageComponent},
+                      {path: 'porRegion', component:PorRegionPageComponent},
                       {path: 'porPais', component:PorPaisPageComponent},
                       //{path: '**',       redirectTo:'by/:id'}
                     ]

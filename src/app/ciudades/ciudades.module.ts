@@ -8,11 +8,12 @@ import { PorPaisPageComponent } from './pages/por-pais-page/por-pais-page.compon
 import { CiudadesRoutingModule } from './ciudades.routing.module';
 import { CiudadPageComponent } from './pages/ciudad-page/ciudad-page.component';
 import { SharedModule } from '../shared/shared.module';
+import { TablaCiudadesComponent } from './components/tabla-ciudades/tabla-ciudades.component';
 
 
 
 @NgModule({
-  declarations: [CiudadPageComponent, PorCapitalPageComponent, PorRegionPageComponent, PorPaisPageComponent],
+  declarations: [CiudadPageComponent, PorCapitalPageComponent, PorRegionPageComponent, PorPaisPageComponent, TablaCiudadesComponent],
   imports: [CommonModule, CiudadesRoutingModule, SharedModule, HttpClientModule]
 })
 export class CiudadesModule { }

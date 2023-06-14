@@ -11,7 +11,7 @@ export class PorCapitalPageComponent {
   
   public ciudades: Ciudades[] = [];
 
-  buscarPorCapital(term:any):void{
+  buscarPorCapital(term:string):void{
     
     this.servicioCiudades.buscaCapital(term).subscribe(ciudades => { this.ciudades = ciudades; });
 

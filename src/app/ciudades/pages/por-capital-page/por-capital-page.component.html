@@ -10,7 +10,7 @@
 
 <div class="row">
     <div class="col">
-        <hr> 
-        <table *ngFor = "let ciudad of ciudades">{{ ciudad.capital }} - {{ ciudad.name.official }} - {{ ciudad.population }}</table>
+        <hr>
+        <app-tabla-ciudades [ciudades]="ciudades"></app-tabla-ciudades>
     </div>
 </div>

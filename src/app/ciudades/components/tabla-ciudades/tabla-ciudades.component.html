@@ -1,0 +1,29 @@
+<div *ngIf="ciudades.length === 0; else tabla" class="alert alert-primary" role="alert" >
+    
+    <strong>No se encuentran Paises</strong>
+    <!-- {{ ciudad.capital }} - {{ ciudad.name.official }} - {{ ciudad.population }} --> 
+</div>
+
+<ng-template #tabla>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Bandera</th>
+                <th>Nombre</th>
+                <th>Poblacion</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr *ngFor="let ciudad of ciudades; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>{{ ciudad.flag }}</td>
+                <td>{{ ciudad.name.common }}</td>
+                <td>{{ ciudad.population  }}</td>
+            </tr>
+        </tbody>
+    </table>
+</ng-template>
+
+
